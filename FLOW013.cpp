@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-string isvalidtriangle(int A, int B, int C) {
+string isVT(int A, int B, int C) {
     if (A + B + C == 180) {
         return "YES";
     } else {
@@ -14,7 +14,7 @@ int main() {
     for (int i = 0; i < T; ++i) {
         int A, B, C;
         cin >> A >> B >> C;
-        cout << isvalidtriangle(A, B, C) << endl;
+        cout << isVT(A, B, C) << endl;
     }
 
     return 0;
